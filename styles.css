@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Roboto-black";
+    src: url(fonts/Roboto-Black.ttf) format("truetype")
+}
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(fonts/Roboto-Bold.ttf) format("truetype")
+}
+@font-face {
+    font-family: "Roboto-medium";
+    src: url(fonts/Roboto-Medium.ttf) format("truetype")
+}
+@font-face {
+    font-family: "Roboto-regular";
+    src: url(fonts/Roboto-Regular.ttf) format("truetype")
+}
+@font-face {
+    font-family: "Roboto-light";
+    src: url(fonts/Roboto-Light.ttf) format("truetype")
+}
+@font-face {
+    font-family: "Roboto-thin";
+    src: url(fonts/Roboto-Thin.ttf) format("truetype")
+}
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(fonts/Lato-Regular.ttf) format("truetype")
+}
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(fonts/Lato-Bold.ttf) format("truetype")
+}
+
+.background{
+position:absolute;
+top:0px;
+width:100%;
+}
+
+h1{
+font-family: 'Inter';
+font-style: normal;
+font-size: 44px;
+line-height: 53px;
+text-align: center;
+color: #411A05;
+max-width: 570px;
+}
+
+.images-grid{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 550px;
+margin: 20px;
+}
