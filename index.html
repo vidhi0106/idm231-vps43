@@ -4,38 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubble Tea Zodiac Project</title>
+    <title>Bubble Tea Zodiac</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="wrapper">
         <img class="background-image" src="graphics/background.png" alt="background">
-
+        <div class="help-button-box">
+            <button class = "help-button-icon js-help-button">
+                <img class="help-icon js-help-icon" src="graphics/help.png" alt="help-button">
+            </button>
+        </div>
+        <div class="help-box-rectangle js-help-box">
+            <button class="help-button-close js-help-button-close">
+                <img class="help-close-icon js-help-close-icon" src="graphics/close.png" alt="help close button" >
+            </button>
+            <h1 class="help-box-heading">
+                The Bubble Tea Zodiac!
+            </h1>
+            <h2 class="help-box-sub-heading">
+                Find out your Bubble tea flavor based on your birthdate. 
+            </h2>
+            <ol class="help-box-list">
+                <li>
+                    Enter your birthday in the text field.
+                </li>
+                <li>
+                    Hit Submit to find the results!.
+                </li>
+            </ol>
+        </div>
         <div class="rectangle js-main-rectangle">
             <div class="zodiac-heist-title">
                 <h1>The Bubble Tea Zodiac</h1>
             </div>
             <div class="zodiac-heist-sub-title">
-                <h2>Find your Bubble Tea based on your birthday!</h2>
+                <h2>Find out your Bubble tea flavor based on your birthdate!</h2>
             </div>
-            <!-- <section id="dob">
-                <div class="dob-text">
-                    <h3>Enter Date of Heist</h3>
-                </div>
-                <div class="dob-details">
-                    <p>
-                        Month:<input class="input-month" type="number" id="month" min="1" max="12" required>
-                        Day:<input class="input-day" type="number" id="day" min="1" max="31" required>
-                    </p>
-                    <button id="submit-button" onclick="zodiac()">
-                        UnMask your character
-                    </button>
-                </div>
-            </section> -->
+        
             <form id="dob">
                 <div class="dob-text">
                     <h3>
-                        Enter Date of Birth
+                        Enter your birthday
                     </h3>
                 </div>
                 <div class="dob-details">
@@ -47,14 +57,14 @@
                     </div>
                     <br>
                     <button class="submit-button">
-                        Find your Bubble Tea
+                        Submit
                     </button>
                 </div>
             </form>
             <div class="modals">
                 <div class="zodiac-sub-box js-character-reveal">
                     <h1 class="sign-name-aquarius js-sign-name"><span class="output"></span></h1>
-                    <img class="sign-image-aquarius js-character-img" src="graphics/aquarius-monica-gaztambide.jpg" alt="picture of Esther Acebo">
+                    <img class="sign-image-aquarius js-character-img" src="graphics/aquarius.png" alt="aquarius bubble tea">
                     <h2 class="name-of-person-aquarius js-character-name-person"></h2>
                     <p class="person-bio-aquarius js-character-bio"></p>
                 </div>
@@ -62,86 +72,74 @@
             <section id="main-container">
                 <button class="aquarius-button">
                 <div class="zodiac-box">
-                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="picture mask person">
-                    <h4>Aquarius</h4>
-                    <p>January 20 - February 18</p>
+                    <img class="zodiac-box-img" src="graphics/aquarius.png" alt="aquarius bubble tea">
+                    
                 </div>
                 </button>
                 <button class="pisces-button">
                 <div class="zodiac-box">
-                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="picture mask person">
-                    <h4>Pisces</h4>
-                    <p>February 19 - March 20</p>
+                    <img class="zodiac-box-img" src="graphics/pisces.png" alt="pisces bubble tea">
+                    
                 </div>
                 </button>
                 <button class="aries-button">
                 <div class="zodiac-box">
-                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="picture mask person">
-                    <h4>Aries</h4>
-                    <p>March 21 - April 19</p>
+                    <img class="zodiac-box-img" src="graphics/aries.png" alt="aries bubble tea">
+                    
                 </div>
                 </button>
                 <button class="taurus-button">
                 <div class="zodiac-box">
-                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="picture mask person">
-                    <h4>Taurus</h4>
-                    <p>April 20 - May 20</p>
+                    <img class="zodiac-box-img" src="graphics/taurus.png" alt="taurus bubble tea">
+                
                 </div>
                 </button>
                 <button class="gemini-button">
                 <div class="zodiac-box">
-                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="picture mask person">
-                    <h4>Gemini</h4>
-                    <p>May 21 - June 20</p>
+                    <img class="zodiac-box-img" src="graphics/gemini.png" alt="gemini bubble tea">
+                    
                 </div>
                 </button>
                 <button class="cancer-button">
                 <div class="zodiac-box">
-                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="picture mask person">
-                    <h4>Cancer</h4>
-                    <p>June 21 - July 22</p>
+                    <img class="zodiac-box-img" src="graphics/cancer.png" alt="cancer bubble tea">
+                    
                 </div>
                 </button>
                 <button class="leo-button">
                 <div class="zodiac-box">
-                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="picture mask person">
-                    <h4>Leo</h4>
-                    <p>July 23 - August 22</p>
+                    <img class="zodiac-box-img" src="graphics/leo.png" alt="leo bubble tea">
+                    
                 </div>
                 </button>
                 <button class="virgo-button">
                 <div class="zodiac-box">
-                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="picture mask person">
-                    <h4>Virgo</h4>
-                    <p>August 23 - September 22</p>
+                    <img class="zodiac-box-img" src="graphics/virgo.png" alt="virgo bubble tea">
+                    
                 </div>
                 </button>
                 <button class="libra-button">
                 <div class="zodiac-box">
-                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="picture mask person">
-                    <h4>Libra</h4>
-                    <p>September 23 - October 22</p>
+                    <img class="zodiac-box-img" src="graphics/libra.png" alt="libra bubble tea">
+                    
                 </div>
                 </button>
                 <button class="scorpio-button">
                 <div class="zodiac-box">
-                    <img class="zodiac-box-img" src="graphics/mask.jpg" alt="picture mask person">
-                    <h4>Scorpio</h4>
-                    <p>October 23 - November 21</p>
+                    <img class="zodiac-box-img" src="graphics/scorpio.png" alt="scorpio bubble tea">
+                    
                 </div>
                 </button>
                 <button class="sagittarius-button">
                     <div class="zodiac-box">
-                        <img class="zodiac-box-img" src="graphics/mask.jpg" alt="picture mask person">
-                        <h4>Sagittarius</h4>
-                        <p>November 22 - December 21</p>
+                        <img class="zodiac-box-img" src="graphics/saggitarius.png" alt="sagittarius mask person">
+                        
                     </div>
                 </button>
                 <button class="capricorn-button">
                     <div class="zodiac-box">
-                        <img class="zodiac-box-img" src="graphics/mask.jpg" alt="picture mask person">
-                        <h4>Capricorn</h4>
-                        <p>December 22 - January 19</p>
+                        <img class="zodiac-box-img" src="graphics/capricorn.png" alt="capricorn mask person">
+                        
                     </div>
                 </button>
             </section>

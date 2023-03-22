@@ -4,7 +4,6 @@ let charName = "";
 let bio = "";
 let helping = "";
 
-//  images as button 
 
 const maskAquarius = document.querySelector('.aquarius-button');
 const maskpisces = document.querySelector('.pisces-button');
@@ -19,29 +18,48 @@ const maskScorpio = document.querySelector('.scorpio-button');
 const maskSagittarius = document.querySelector('.sagittarius-button');
 const maskCapricorn = document.querySelector('.capricorn-button');
 
-// end of images as button 
 
-// function to figure out the zodiac character
 function zodiac(){
-    // changed these to const bc they're not gonna change
+    
     const birthmonth = document.getElementById("month").value;
     const birthday = document.getElementById("day").value;
 
-// alert for no date
-    if (!birthmonth || !birthday){
-      return alert('no date')
-    }
-    // change this to let instead of var
-    let result = " unknown because you didn't put a valid date.";
 
-    // order of operations makes this condition okay but let's add parenthesis
+    if (birthmonth > 12){
+      return alert('Please enter a valid date!')
+    }
+    if (birthday > 31){
+      return alert('Please enter a valid date!')
+    }
+    
+    let result = "Please enter a valid date!";
+
+    if(birthmonth == 2 && birthday > 29){ 
+      return alert('Please enter a valid date!') 
+    }
+
+    if(birthmonth == 4 && birthday > 30){ 
+      return alert('Please enter a valid date!') 
+    }
+
+    if(birthmonth == 6 && birthday > 30){ 
+      return alert('Please enter a valid date!') 
+    }
+
+    if(birthmonth == 9 && birthday > 30){ 
+      return alert('Please enter a valid date!') 
+    }
+    if(birthmonth == 11 && birthday > 30){ 
+      return alert('Please enter a valid date!') 
+    }
+
     if ((birthmonth == 1 && birthday >= 20) || (birthmonth == 2 && birthday <= 18)){
       
       document.getElementsByClassName("zodiac-sub-box").innerHTML
       sign = "Aquarius";
-      img = "graphics/aquarius-monica-gaztambide.jpg";
-      charName = "Esther Acebo · Monica Gaztambide";
-      bio = "You Match with Esther Acebo AKA Monica Gaztambide from Money Hesit";
+      img = "graphics/aquarius.png";
+      charName = "Blueberry Lemonade Bubble Tea";
+      bio = "Aquarians are known for their independent and innovative nature, and the refreshing and tart flavors of blueberry and lemonade in a bubble tea reflect their originality and creative spirit.";
       var audio = new Audio ('assets/1-aquarius-sound.mp3');
       audio.play();
 
@@ -51,9 +69,9 @@ function zodiac(){
       
       document.getElementsByClassName("zodiac-sub-box").innerHTML
       sign="Pisces";
-      img="graphics/pisces-marsella.jpg";
-      charName="Luka Peroš · Marsella";
-      bio ="You Match with Luka Peroš AKA Marsella from Money Hesit";
+      img="graphics/pisces.png";
+      charName="Coconut Lychee Bubble Tea";
+      bio ="Pisceans are known for their dreamy and imaginative nature, and the sweet and tropical flavors of coconut and lychee in a bubble tea represent their whimsical and mystical personality.";
       var audio = new Audio ('assets/2-pisces-sound.mp3');
       audio.play();
         
@@ -62,9 +80,9 @@ function zodiac(){
      
       document.getElementsByClassName("zodiac-sub-box").innerHTML
       sign="Aries";
-      img="graphics/aries-berlin.jpg";
-      charName="Pedro Alonso · Berlin";
-      bio ="You Match with Pedro Alonso AKA Berlin from Money Hesit";
+      img="graphics/aries.png";
+      charName="Spicy Mango Bubble Tea";
+      bio ="Aries is known for being adventurous and passionate, and this bubble tea flavor reflects their bold personality with the spicy kick of mango.";
       var audio = new Audio ('assets/3-aries-sound.mp3');
       audio.play();
       
@@ -74,9 +92,9 @@ function zodiac(){
       
       document.getElementsByClassName("zodiac-sub-box").innerHTML
       sign="Taurus";
-      img="graphics/taurus-raquel-murillo.jpg";
-      charName="Itziar Ituño · Raquel Murillo";    
-      bio ="You Match with Itziar Ituño AKA Raquel Murillo from Money Hesit";
+      img="graphics/taurus.png";
+      charName="Honeydew Milk Tea";    
+      bio ="Taurus is known for their love of comfort and luxury, and the creamy sweetness of honeydew milk tea perfectly suits their indulgent nature.";
       var audio = new Audio ('assets/4-taurus-sound.mp3');
       audio.play();
 
@@ -86,9 +104,9 @@ function zodiac(){
      
       document.getElementsByClassName("zodiac-sub-box").innerHTML
       sign="Gemini";
-      img="graphics/gemini-rio.jpg";
-      charName="Miguel Herrán · Rio";
-      bio ="You Match with Miguel Herrán AKA Rio from Money Hesit";
+      img="graphics/gemini.png";
+      charName="Matcha Latte Bubble Tea";
+      bio ="Geminis are known for their intellectual curiosity and quick-wittedness, and the earthy flavor of matcha in a latte bubble tea reflects their sharp and inquisitive personality.";
       var audio = new Audio ('assets/5-gemini-sound.mp3');
       audio.play();
 
@@ -98,9 +116,9 @@ function zodiac(){
       
       document.getElementsByClassName("zodiac-sub-box").innerHTML
       sign="Cancer";
-      img="graphics/cancer-nairobi.jpg";
-      charName="Alba Flores · Nairobi";
-      bio ="You Match with Alba Flores AKA Nairobi from Money Hesit";
+      img="graphics/cancer.png";
+      charName="Blueberry Lavender Bubble Tea";
+      bio ="Cancerians are known for their nurturing and sensitive nature, and the soothing combination of blueberry and lavender in a bubble tea represents their calm and caring personality.";
       var audio = new Audio ('assets/6-cancer-sound.mp3');
       audio.play();
 
@@ -109,9 +127,9 @@ function zodiac(){
       
       document.getElementsByClassName("zodiac-sub-box").innerHTML
       sign="Leo";
-      img="graphics/leo-martin-berrote.jpg";
-      charName="Rodrigo de la Serna · Martin Berrote";
-      bio ="You Match with Rodrigo de la Serna AKA Martin Berrote from Money Hesit";
+      img="graphics/leo.png";
+      charName="Pineapple Coconut Bubble Tea";
+      bio ="Leos are known for their bold and flamboyant personality, and the tropical flavors of pineapple and coconut in a bubble tea perfectly reflect their energetic and vibrant nature.";
       var audio = new Audio ('assets/7-leo-sound.mp3');
       audio.play();
 
@@ -120,9 +138,9 @@ function zodiac(){
 
         document.getElementsByClassName("zodiac-sub-box").innerHTML
         sign="Virgo";
-        img="graphics/virgo-the-professor.jpg";
-        charName="Álvaro Morte · The Professor";
-        bio ="You Match with Álvaro Morte AKA The Professor from Money Hesit";
+        img="graphics/virgo.png";
+        charName="Green Apple Bubble Tea";
+        bio ="Virgos are known for their practicality and attention to detail, and the crisp and refreshing flavor of green apple in a bubble tea reflects their meticulous and analytical nature.";
         var audio = new Audio ('assets/8-virgo-sound.mp3');
         audio.play();
         
@@ -131,9 +149,9 @@ function zodiac(){
         
         document.getElementsByClassName("zodiac-sub-box").innerHTML
         sign="Libra";
-        img="graphics/libra-tokyo.jpg";
-        charName="Úrsula Corberó · Tokyo";
-        bio ="You Match with Úrsula Corberó AKA Tokyo from Money Hesit";
+        img="graphics/libra.png";
+        charName="Rose Milk Tea";
+        bio ="Libras are known for their love of beauty and harmony, and the delicate floral notes of rose in a milk tea represent their aesthetic sensibility and desire for balance.";
         var audio = new Audio ('assets/9-libra-sound.mp3');
         audio.play();
 
@@ -142,9 +160,9 @@ function zodiac(){
        
         document.getElementsByClassName("zodiac-sub-box").innerHTML
         sign="Scorpio";
-        img="graphics/scorpio-denver.jpg";
-        charName="Jaime Lorente · Denver";
-        bio ="You Match with Jaime Lorente AKA Denver from Money Hesit";
+        img="graphics/scorpio.png";
+        charName="Chocolate Brown Sugar Bubble Tea";
+        bio ="Scorpios are known for their intense and passionate nature, and the rich and decadent flavors of chocolate and brown sugar in a bubble tea reflect their deep and complex personality.";
         var audio = new Audio ('assets/10-scorpio-sound.mp3');
         audio.play();
         
@@ -153,9 +171,9 @@ function zodiac(){
         
         document.getElementsByClassName("zodiac-sub-box").innerHTML
         sign="Sagittarius";
-        img="graphics/sagittarius-bogota.jpg";
-        charName="Hovik Keuchkerian · Bogota";
-        bio ="You Match with Hovik Keuchkerian AKA Bogota from Money Hesit";
+        img="graphics/saggitarius.png";
+        charName="Mango Passionfruit Bubble Tea";
+        bio ="Sagittarians are known for their love of adventure and spontaneity, and the exotic and fruity flavors of mango and passionfruit in a bubble tea reflect their free-spirited and adventurous nature.";
         var audio = new Audio ('assets/11-sagittarius-sound.mp3');
         audio.play();
         
@@ -165,9 +183,9 @@ function zodiac(){
        
         document.getElementsByClassName("zodiac-sub-box").innerHTML
         sign="Capricorn";
-        img="graphics/capricorn-helsinki.jpg";
-        charName="Darko Perić · Helsinki";
-        bio ="You Match with Darko Perić AKA Helsinki from Money Hesit";
+        img="graphics/capricorn.png";
+        charName="Black Sesame Bubble Tea";
+        bio ="Capricorns are known for their practicality and ambition, and the subtle and nutty flavor of black sesame in a bubble tea represents their disciplined and determined personality.";
         var audio = new Audio ('assets/12-capricorn-sound.mp3');
         audio.play();
         
@@ -202,19 +220,19 @@ function setCharacter(){
 }
 
 
-// event listener for the submit button
+
 const submitButton = document.querySelector('.submit-button');
 submitButton.addEventListener('click', function(event){
   event.preventDefault();
   zodiac();
 });
 
-// help box 
+
 const showHelpBox = () =>{
 
   const helpBox = document.querySelector('.js-help-box');
 
-  // show and hide box
+
   if (helping){
       helpBox.style.display = "none";
       helping = false;
@@ -227,7 +245,7 @@ const showHelpBox = () =>{
 
   rectangle(helping);
 };
-//  main box hide when helping and show when not helping
+
 function rectangle(hiding){
   const mainRectangle = document.querySelector('.js-main-rectangle');
   if (hiding){
@@ -249,9 +267,9 @@ helpCloseButton.addEventListener('click', showHelpBox);
 maskAquarius.addEventListener('click', function(){
   document.getElementsByClassName("zodiac-sub-box").innerHTML
   sign = "Aquarius";
-  img = "graphics/aquarius-monica-gaztambide.jpg";
-  charName = "Esther Acebo · Monica Gaztambide";
-  bio = "You Match with Esther Acebo AKA Monica Gaztambide from Money Hesit";
+  img = "graphics/aquarius.png";
+  charName = "Blueberry Lemonade Bubble Tea";
+  bio = "Aquarians are known for their independent and innovative nature, and the refreshing and tart flavors of blueberry and lemonade in a bubble tea reflect their originality and creative spirit.";
   setCharacter();
   var audio = new Audio ('assets/1-aquarius-sound.mp3');
   audio.play();
@@ -259,9 +277,9 @@ maskAquarius.addEventListener('click', function(){
 maskpisces.addEventListener('click', function(){
   document.getElementsByClassName("zodiac-sub-box").innerHTML
   sign="Pisces";
-  img="graphics/pisces-marsella.jpg";
-  charName="Luka Peroš · Marsella";
-  bio ="You Match with Luka Peroš AKA Marsella from Money Hesit";
+  img="graphics/pisces.png";
+  charName="Coconut Lychee Bubble Tea ";
+  bio ="Pisceans are known for their dreamy and imaginative nature, and the sweet and tropical flavors of coconut and lychee in a bubble tea represent their whimsical and mystical personality.";
   setCharacter();
   var audio = new Audio ('assets/2-pisces-sound.mp3');
   audio.play();  
@@ -269,9 +287,9 @@ maskpisces.addEventListener('click', function(){
 maskAries.addEventListener('click', function(){
   document.getElementsByClassName("zodiac-sub-box").innerHTML
   sign="Aries";
-  img="graphics/aries-berlin.jpg";
-  charName="Pedro Alonso · Berlin";
-  bio ="You Match with Pedro Alonso AKA Berlin from Money Hesit";
+  img="graphics/aries.png";
+  charName="Spicy Mango Bubble Tea";
+  bio ="Aries is known for being adventurous and passionate, and this bubble tea flavor reflects their bold personality with the spicy kick of mango.";
   setCharacter();
   var audio = new Audio ('assets/3-aries-sound.mp3');
   audio.play();
@@ -279,9 +297,9 @@ maskAries.addEventListener('click', function(){
 maskTaurus.addEventListener('click', function(){
   document.getElementsByClassName("zodiac-sub-box").innerHTML
   sign="Taurus";
-  img="graphics/taurus-raquel-murillo.jpg";
-  charName="Itziar Ituño · Raquel Murillo";    
-  bio ="You Match with Itziar Ituño AKA Raquel Murillo from Money Hesit";
+  img="graphics/taurus.png";
+  charName="Honeydew Milk Tea";    
+  bio ="Taurus is known for their love of comfort and luxury, and the creamy sweetness of honeydew milk tea perfectly suits their indulgent nature.";
   setCharacter();
   var audio = new Audio ('assets/4-taurus-sound.mp3');
   audio.play();  
@@ -289,9 +307,9 @@ maskTaurus.addEventListener('click', function(){
 maskAGemini.addEventListener('click', function(){
   document.getElementsByClassName("zodiac-sub-box").innerHTML
   sign="Gemini";
-  img="graphics/gemini-rio.jpg";
-  charName="Miguel Herrán · Rio";
-  bio ="You Match with Miguel Herrán AKA Rio from Money Hesit";
+  img="graphics/gemini.png";
+  charName="Matcha Latte Bubble Tea";
+  bio ="Geminis are known for their intellectual curiosity and quick-wittedness, and the earthy flavor of matcha in a latte bubble tea reflects their sharp and inquisitive personality.";
   setCharacter();
   var audio = new Audio ('assets/5-gemini-sound.mp3');
   audio.play();  
@@ -299,9 +317,10 @@ maskAGemini.addEventListener('click', function(){
 maskCancer.addEventListener('click', function(){
   document.getElementsByClassName("zodiac-sub-box").innerHTML
   sign="Cancer";
-  img="graphics/cancer-nairobi.jpg";
-  charName="Alba Flores · Nairobi";
-  bio ="You Match with Alba Flores AKA Nairobi from Money Hesit";
+  img="graphics/cancer.png";
+  charName="Blueberry Lavender Bubble Tea";
+  bio ="Cancerians are known for their nurturing and sensitive nature, and the soothing combination of blueberry and lavender in a bubble tea represents their calm and caring personality"
+  ;
   setCharacter();
   var audio = new Audio ('assets/6-cancer-sound.mp3');
   audio.play();  
@@ -309,9 +328,9 @@ maskCancer.addEventListener('click', function(){
 maskLeo.addEventListener('click', function(){
   document.getElementsByClassName("zodiac-sub-box").innerHTML
   sign="Leo";
-  img="graphics/leo-martin-berrote.jpg";
-  charName="Rodrigo de la Serna · Martin Berrote";
-  bio ="You Match with Rodrigo de la Serna AKA Martin Berrote from Money Hesit";
+  img="graphics/leo.png";
+  charName="Pineapple Coconut Bubble Tea";
+  bio ="Leos are known for their bold and flamboyant personality, and the tropical flavors of pineapple and coconut in a bubble tea perfectly reflect their energetic and vibrant nature.";
   setCharacter();
   var audio = new Audio ('assets/7-leo-sound.mp3');
   audio.play();  
@@ -319,9 +338,9 @@ maskLeo.addEventListener('click', function(){
 maskVirgo.addEventListener('click', function(){
   document.getElementsByClassName("zodiac-sub-box").innerHTML
   sign="Virgo";
-  img="graphics/virgo-the-professor.jpg";
-  charName="Álvaro Morte · The Professor";
-  bio ="You Match with Álvaro Morte AKA The Professor from Money Hesit";
+  img="graphics/virgo.png";
+  charName="Green Apple Bubble Tea";
+  bio ="Virgos are known for their practicality and attention to detail, and the crisp and refreshing flavor of green apple in a bubble tea reflects their meticulous and analytical nature.";
   setCharacter();
   var audio = new Audio ('assets/8-virgo-sound.mp3');
   audio.play();  
@@ -329,9 +348,9 @@ maskVirgo.addEventListener('click', function(){
 maskLibra.addEventListener('click', function(){
   document.getElementsByClassName("zodiac-sub-box").innerHTML
   sign="Libra";
-  img="graphics/libra-tokyo.jpg";
-  charName="Úrsula Corberó · Tokyo";
-  bio ="You Match with Úrsula Corberó AKA Tokyo from Money Hesit";
+  img="graphics/libra.png";
+  charName="Rose Milk Tea";
+  bio ="Libras are known for their love of beauty and harmony, and the delicate floral notes of rose in a milk tea represent their aesthetic sensibility and desire for balance.";
   setCharacter();
   var audio = new Audio ('assets/9-libra-sound.mp3');
   audio.play();  
@@ -339,9 +358,9 @@ maskLibra.addEventListener('click', function(){
 maskScorpio.addEventListener('click', function(){
   document.getElementsByClassName("zodiac-sub-box").innerHTML
   sign="Scorpio";
-  img="graphics/scorpio-denver.jpg";
-  charName="Jaime Lorente · Denver";
-  bio ="You Match with Jaime Lorente AKA Denver from Money Hesit";
+  img="graphics/scorpio.png";
+  charName="Chocolate Brown Sugar Bubble Tea";
+  bio ="Scorpios are known for their intense and passionate nature, and the rich and decadent flavors of chocolate and brown sugar in a bubble tea reflect their deep and complex personality.";
   setCharacter();
   var audio = new Audio ('assets/10-scorpio-sound.mp3');
   audio.play();  
@@ -349,9 +368,9 @@ maskScorpio.addEventListener('click', function(){
 maskSagittarius.addEventListener('click', function(){
   document.getElementsByClassName("zodiac-sub-box").innerHTML
   sign="Sagittarius";
-  img="graphics/sagittarius-bogota.jpg";
-  charName="Hovik Keuchkerian · Bogota";
-  bio ="You Match with Hovik Keuchkerian AKA Bogota from Money Hesit";
+  img="graphics/saggitarius.png";
+  charName="Mango Passionfruit Bubble Tea";
+  bio ="Sagittarians are known for their love of adventure and spontaneity, and the exotic and fruity flavors of mango and passionfruit in a bubble tea reflect their free-spirited and adventurous nature.";
   setCharacter();
   var audio = new Audio ('assets/11-sagittarius-sound.mp3');
   audio.play();  
@@ -359,9 +378,9 @@ maskSagittarius.addEventListener('click', function(){
 maskCapricorn.addEventListener('click', function(){
   document.getElementsByClassName("zodiac-sub-box").innerHTML
   sign="Capricorn";
-  img="graphics/capricorn-helsinki.jpg";
-  charName="Darko Perić · Helsinki";
-  bio ="You Match with Darko Perić AKA Helsinki from Money Hesit";
+  img="graphics/capricorn.png";
+  charName="Black Sesame Bubble Tea";
+  bio ="Capricorns are known for their practicality and ambition, and the subtle and nutty flavor of black sesame in a bubble tea represents their disciplined and determined personality.";
   setCharacter();
   var audio = new Audio ('assets/12-capricorn-sound.mp3');
   audio.play();

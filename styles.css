@@ -1,7 +1,5 @@
-@font-face {
-    font-family: "Roboto-black";
-    src: url(fonts/Roboto-Black.ttf) format("truetype")
-}
+
+
 @font-face {
     font-family: "Roboto-bold";
     src: url(fonts/Roboto-Bold.ttf) format("truetype")
@@ -10,47 +8,360 @@
     font-family: "Roboto-medium";
     src: url(fonts/Roboto-Medium.ttf) format("truetype")
 }
-@font-face {
-    font-family: "Roboto-regular";
-    src: url(fonts/Roboto-Regular.ttf) format("truetype")
-}
-@font-face {
-    font-family: "Roboto-light";
-    src: url(fonts/Roboto-Light.ttf) format("truetype")
-}
-@font-face {
-    font-family: "Roboto-thin";
-    src: url(fonts/Roboto-Thin.ttf) format("truetype")
-}
-@font-face {
-    font-family: "Lato-Regular";
-    src: url(fonts/Lato-Regular.ttf) format("truetype")
-}
-@font-face {
-    font-family: "Lato-Bold";
-    src: url(fonts/Lato-Bold.ttf) format("truetype")
-}
 
-.background{
-position:absolute;
-top:0px;
-width:100%;
-}
+:root {
+    --Roboto-bold:"Roboto-bold";
+    --Roboto-medium:"Roboto-medium";
+   }
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.background-image {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    object-fit: cover;
+}
+.wrapper {
+    padding: 25px;
+}
 h1{
-font-family: 'Inter';
-font-style: normal;
-font-size: 44px;
-line-height: 53px;
-text-align: center;
-color: #411A05;
-max-width: 570px;
+    font-family: var(--Roboto-bold);
+    font-size: 48;
+    }
+    
+    h2{
+    font-family: var(--Roboto-bold);
+    font-size: 32px;
+    }
+    
+    h3{
+    font-family: var(--Roboto-bold);
+    font-size: 24px;
+    }
+    
+    h4{
+    font-family: var(--Roboto-medium);
+    font-size:20px;
+    display:flex;
+    }
+    
+    p{
+    font-family: var(--Roboto-medium);
+    font-size: 16px; 
+    }
+
+.zodiac-heist-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #553C28;
+    padding: 10px;
+    margin: 5px;
+}
+.zodiac-heist-sub-title {
+    text-align: center;
+    color: #553C28;
+    padding: 10px;
+    margin: 5px;
+}
+.dob-text {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #553C28;
+    padding: 5px;
+    margin: 5px;
+}
+.dob-details {
+    font-family:var(--Roboto-bold);
+    color: #553C28;
+    border-radius: 20px;
+    font-size: 1.25rem;
+	text-align: center;
+}
+.dob-month-day {
+    font-size: 1.75rem;
+}
+.submit-button {
+    font-family:var(--Roboto-bold);
+    color: #fff;
+    background-color:#553C28;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.25rem;
+    padding: 20px 40px;
+    margin: 3px;
+    border: 3px solid #553C28;
+}
+.submit-button:hover {
+    color:#553C28;
+    border: 4px solid #553C28;
+    cursor: pointer;
+    background-color:white;
+
 }
 
-.images-grid{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-width: 550px;
-margin: 20px;
+/* .rectangle {
+    width: 100%;
+    background: rgba(196, 196, 196, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 35px;
+} */
+
+.rectangle {
+    width: 100%;
+
+}
+.zodiac-box-img {
+    width: 150px;
+}
+.zodiac-box-img:hover{
+    filter: drop-shadow(16px 16px 20px #6F6F6F);
+}
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: center;
+}
+.zodiac-box {
+    /* either use 180px or 240px */
+    max-width: 180px;
+    /* max-width: 180px; */
+    margin: 30px;
+    color: #553C28;
+    text-align: center;
+}
+
+
+.input-month {
+    color:#553C28;
+    font-family:var(--Roboto-medium);
+    font-size: 1.25rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100px;
+    border-radius: 10px;
+    border: 3px solid #553C28;
+    text-align: center;
+}
+.input-day {
+    color: #553C28;
+    font-family:var(--Roboto-medium);
+    font-size: 1.25rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100px;
+    border-radius: 10px;
+    border: 3px solid #553C28;
+    text-align: center;
+}
+
+/* this is zodiac cards */
+
+.zodiac-sub-box {
+    display: none;
+    max-width: 700px;
+    color: #553C28;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+    border: 3px solid #553C28;
+}
+.sign-image-aquarius {
+    /* max-height: 200px; */
+    /* object-fit: cover; */
+    width: 20%;
+    margin:auto;
+    text-align: center;
+    border-radius: 10px;
+    display:flex;
+}
+.sign-name-aquarius {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.name-of-person-aquarius {
+    font-family: var(--Roboto-medium);
+    text-align: center;
+    padding: 10px
+}
+.person-bio-aquarius {
+    font-family: var(--Roboto-medium);
+    font-size: 1rem;
+	padding: 10px;
+}
+
+/* help button */
+
+.help-button-box{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.help-button-icon {
+    border: none;
+    background: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width:80px;
+}
+.help-button-close {
+    display: flex;
+    align-self: flex-end;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin: 10px;
+}
+.help-close-icon {
+    border: none;
+    background: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px;
+    width:80px;
+}
+.help-box-heading {
+    color:#553C28;
+    text-align: left;
+    font-size: 3rem;
+    font-family: var(--Roboto-medium);
+    padding: 10px;
+}
+
+.help-box-list {
+    padding:  0 0 0 30px;
+    color: #553C28;
+    font-size: 1.5rem;
+    font-family: var(--Roboto-medium);
+    padding: 10px 30px;
+    margin: 10px 20px;
+}
+
+.help-box-rectangle {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    margin: 20px 0;
+    border: 2px solid #553C28;
+}
+.help-box-sub-heading {
+    color: #553C28;
+    padding: 10px 0 0 20px;
+    font-size: 2rem;
+    font-family: var(--Roboto-medium);
+}
+
+/* remover image button background  */
+
+.aquarius-button {
+    background: none;
+}
+.aquarius-button:hover {
+    cursor: pointer;
+}
+
+.pisces-button{
+    background: none;
+}
+.pisces-button:hover {
+    cursor: pointer;
+}
+
+.aries-button {
+    background: none;
+}
+.aries-button:hover {
+    cursor: pointer;
+}
+
+.taurus-button {
+    background: none;
+}
+.taurus-button:hover {
+    cursor: pointer;
+}
+
+.gemini-button {
+    background: none;
+}
+.gemini-button:hover {
+    cursor: pointer;
+}
+
+.cancer-button {
+    background: none;
+}
+.cancer-button:hover {
+    cursor: pointer;
+}
+
+.leo-button {
+    background: none;
+}
+.leo-button:hover {
+    cursor: pointer;
+}
+
+.virgo-button {
+    background: none;
+}
+.virgo-button:hover {
+    cursor: pointer;
+}
+
+.libra-button {
+    background: none;
+}
+.libra-button:hover {
+    cursor: pointer;
+}
+
+.scorpio-button {
+    background: none;
+}
+.scorpio-button:hover {
+    cursor: pointer;
+}
+
+.sagittarius-button {
+    background: none;
+}
+.sagittarius-button:hover {
+    cursor: pointer;
+}
+
+.capricorn-button {
+    background: none;
+}
+.capricorn-button:hover {
+    cursor: pointer;
 }
