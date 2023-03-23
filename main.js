@@ -26,36 +26,36 @@ function zodiac(){
 
 
     if (birthmonth > 12){
-      return alert('Please enter a valid date!')
+      return alert('Please enter a valid date!');
     }
     if (birthday > 31){
-      return alert('Please enter a valid date!')
+      return alert('Please enter a valid date!');
     }
     
     let result = "Please enter a valid date!";
 
     if(birthmonth == 2 && birthday > 29){ 
-      return alert('Please enter a valid date!') 
+      return alert('Please enter a valid date!');
     }
 
     if(birthmonth == 4 && birthday > 30){ 
-      return alert('Please enter a valid date!') 
+      return alert('Please enter a valid date!'); 
     }
 
     if(birthmonth == 6 && birthday > 30){ 
-      return alert('Please enter a valid date!') 
+      return alert('Please enter a valid date!');
     }
 
     if(birthmonth == 9 && birthday > 30){ 
-      return alert('Please enter a valid date!') 
+      return alert('Please enter a valid date!'); 
     }
     if(birthmonth == 11 && birthday > 30){ 
-      return alert('Please enter a valid date!') 
+      return alert('Please enter a valid date!'); 
     }
 
     if ((birthmonth == 1 && birthday >= 20) || (birthmonth == 2 && birthday <= 18)){
       
-      document.getElementsByClassName("zodiac-sub-box").innerHTML
+      document.getElementsByClassName("zodiac-sub-box").innerHTML;
       sign = "Aquarius";
       img = "graphics/aquarius.png";
       charName = "Blueberry Lemonade Bubble Tea";
@@ -68,7 +68,7 @@ function zodiac(){
   
     if ((birthmonth == 2&& birthday >= 19) || (birthmonth == 3&& birthday <= 20)){
       
-      document.getElementsByClassName("zodiac-sub-box").innerHTML
+      document.getElementsByClassName("zodiac-sub-box").innerHTML;
       sign="Pisces";
       img="graphics/pisces.png";
       charName="Coconut Lychee Bubble Tea";
@@ -79,7 +79,7 @@ function zodiac(){
       }
     if ((birthmonth == 3 && birthday >= 21) || (birthmonth == 4 && birthday <= 19)){
      
-      document.getElementsByClassName("zodiac-sub-box").innerHTML
+      document.getElementsByClassName("zodiac-sub-box").innerHTML;
       sign="Aries";
       img="graphics/aries.png";
       charName="Spicy Mango Bubble Tea";
@@ -91,7 +91,7 @@ function zodiac(){
     
     if ((birthmonth == 4 && birthday >= 20)|| (birthmonth == 5 && birthday <= 20)){
       
-      document.getElementsByClassName("zodiac-sub-box").innerHTML
+      document.getElementsByClassName("zodiac-sub-box").innerHTML;
       sign="Taurus";
       img="graphics/taurus.png";
       charName="Honeydew Milk Tea";    
@@ -103,7 +103,7 @@ function zodiac(){
     
     if ((birthmonth == 5 && birthday >= 21) || (birthmonth == 6 && birthday <= 20)){
      
-      document.getElementsByClassName("zodiac-sub-box").innerHTML
+      document.getElementsByClassName("zodiac-sub-box").innerHTML;
       sign="Gemini";
       img="graphics/gemini.png";
       charName="Matcha Latte Bubble Tea";
@@ -115,7 +115,7 @@ function zodiac(){
     
     if ((birthmonth == 6 && birthday >= 21) || (birthmonth == 7 && birthday <= 22)){
       
-      document.getElementsByClassName("zodiac-sub-box").innerHTML
+      document.getElementsByClassName("zodiac-sub-box").innerHTML;
       sign="Cancer";
       img="graphics/cancer.png";
       charName="Blueberry Lavender Bubble Tea";
@@ -126,7 +126,7 @@ function zodiac(){
       }
     if ((birthmonth == 7 && birthday >= 23) || (birthmonth == 8 && birthday <= 22)){
       
-      document.getElementsByClassName("zodiac-sub-box").innerHTML
+      document.getElementsByClassName("zodiac-sub-box").innerHTML;
       sign="Leo";
       img="graphics/leo.png";
       charName="Pineapple Coconut Bubble Tea";
@@ -137,7 +137,7 @@ function zodiac(){
       }
       if ((birthmonth == 8 && birthday >= 23) || (birthmonth == 9 && birthday <= 22)){
 
-        document.getElementsByClassName("zodiac-sub-box").innerHTML
+        document.getElementsByClassName("zodiac-sub-box").innerHTML;
         sign="Virgo";
         img="graphics/virgo.png";
         charName="Green Apple Bubble Tea";
@@ -148,7 +148,7 @@ function zodiac(){
         }
       if ((birthmonth == 9 && birthday >= 23) || (birthmonth == 10 && birthday <= 22)){
         
-        document.getElementsByClassName("zodiac-sub-box").innerHTML
+        document.getElementsByClassName("zodiac-sub-box").innerHTML;
         sign="Libra";
         img="graphics/libra.png";
         charName="Rose Milk Tea";
@@ -159,7 +159,7 @@ function zodiac(){
       }
       if ((birthmonth == 10 && birthday >= 23) || (birthmonth == 11 && birthday <= 21)){
        
-        document.getElementsByClassName("zodiac-sub-box").innerHTML
+        document.getElementsByClassName("zodiac-sub-box").innerHTML;
         sign="Scorpio";
         img="graphics/scorpio.png";
         charName="Chocolate Brown Sugar Bubble Tea";
@@ -170,7 +170,7 @@ function zodiac(){
       }
       if ((birthmonth == 11 && birthday >= 22) || (birthmonth == 12 && birthday <= 21)){
         
-        document.getElementsByClassName("zodiac-sub-box").innerHTML
+        document.getElementsByClassName("zodiac-sub-box").innerHTML;
         sign="Sagittarius";
         img="graphics/saggitarius.png";
         charName="Mango Passionfruit Bubble Tea";
@@ -182,7 +182,7 @@ function zodiac(){
     
     if((birthmonth == 12 && birthday >= 22) || (birthmonth == 1 && birthday <= 19)){
        
-        document.getElementsByClassName("zodiac-sub-box").innerHTML
+        document.getElementsByClassName("zodiac-sub-box").innerHTML;
         sign="Capricorn";
         img="graphics/capricorn.png";
         charName="Black Sesame Bubble Tea";
@@ -192,7 +192,7 @@ function zodiac(){
         
       }
         else if (birthmonth>12||birthday>31){
-          return alert("Please enter an accurate date !!!")
+          return alert("Please enter a valid date!");
   
 
       }
@@ -266,7 +266,7 @@ helpCloseButton.addEventListener('click', showHelpBox);
 
 // event listener for images button
 maskAquarius.addEventListener('click', function(){
-  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  document.getElementsByClassName("zodiac-sub-box").innerHTML;
   sign = "Aquarius";
   img = "graphics/aquarius.png";
   charName = "Blueberry Lemonade Bubble Tea";
@@ -277,7 +277,7 @@ maskAquarius.addEventListener('click', function(){
 
 });
 maskpisces.addEventListener('click', function(){
-  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  document.getElementsByClassName("zodiac-sub-box").innerHTML;
   sign="Pisces";
   img="graphics/pisces.png";
   charName="Coconut Lychee Bubble Tea ";
@@ -287,7 +287,7 @@ maskpisces.addEventListener('click', function(){
   audio.play();  
 });
 maskAries.addEventListener('click', function(){
-  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  document.getElementsByClassName("zodiac-sub-box").innerHTML;
   sign="Aries";
   img="graphics/aries.png";
   charName="Spicy Mango Bubble Tea";
@@ -297,7 +297,7 @@ maskAries.addEventListener('click', function(){
   audio.play();
 });
 maskTaurus.addEventListener('click', function(){
-  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  document.getElementsByClassName("zodiac-sub-box").innerHTML;
   sign="Taurus";
   img="graphics/taurus.png";
   charName="Honeydew Milk Tea";    
@@ -307,7 +307,7 @@ maskTaurus.addEventListener('click', function(){
   audio.play();  
 });
 maskAGemini.addEventListener('click', function(){
-  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  document.getElementsByClassName("zodiac-sub-box").innerHTML;
   sign="Gemini";
   img="graphics/gemini.png";
   charName="Matcha Latte Bubble Tea";
@@ -317,7 +317,7 @@ maskAGemini.addEventListener('click', function(){
   audio.play();  
 });
 maskCancer.addEventListener('click', function(){
-  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  document.getElementsByClassName("zodiac-sub-box").innerHTML;
   sign="Cancer";
   img="graphics/cancer.png";
   charName="Blueberry Lavender Bubble Tea";
@@ -328,7 +328,7 @@ maskCancer.addEventListener('click', function(){
   audio.play();  
 });
 maskLeo.addEventListener('click', function(){
-  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  document.getElementsByClassName("zodiac-sub-box").innerHTML;
   sign="Leo";
   img="graphics/leo.png";
   charName="Pineapple Coconut Bubble Tea";
@@ -338,7 +338,7 @@ maskLeo.addEventListener('click', function(){
   audio.play();  
 });
 maskVirgo.addEventListener('click', function(){
-  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  document.getElementsByClassName("zodiac-sub-box").innerHTML;
   sign="Virgo";
   img="graphics/virgo.png";
   charName="Green Apple Bubble Tea";
@@ -348,7 +348,7 @@ maskVirgo.addEventListener('click', function(){
   audio.play();  
 });
 maskLibra.addEventListener('click', function(){
-  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  document.getElementsByClassName("zodiac-sub-box").innerHTML;
   sign="Libra";
   img="graphics/libra.png";
   charName="Rose Milk Tea";
@@ -358,7 +358,7 @@ maskLibra.addEventListener('click', function(){
   audio.play();  
 });
 maskScorpio.addEventListener('click', function(){
-  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  document.getElementsByClassName("zodiac-sub-box").innerHTML;
   sign="Scorpio";
   img="graphics/scorpio.png";
   charName="Chocolate Brown Sugar Bubble Tea";
@@ -368,7 +368,7 @@ maskScorpio.addEventListener('click', function(){
   audio.play();  
 });
 maskSagittarius.addEventListener('click', function(){
-  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  document.getElementsByClassName("zodiac-sub-box").innerHTML;
   sign="Sagittarius";
   img="graphics/saggitarius.png";
   charName="Mango Passionfruit Bubble Tea";
@@ -378,7 +378,7 @@ maskSagittarius.addEventListener('click', function(){
   audio.play();  
 });
 maskCapricorn.addEventListener('click', function(){
-  document.getElementsByClassName("zodiac-sub-box").innerHTML
+  document.getElementsByClassName("zodiac-sub-box").innerHTML;
   sign="Capricorn";
   img="graphics/capricorn.png";
   charName="Black Sesame Bubble Tea";
