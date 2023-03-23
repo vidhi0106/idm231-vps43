@@ -60,8 +60,9 @@ function zodiac(){
       img = "graphics/aquarius.png";
       charName = "Blueberry Lemonade Bubble Tea";
       bio = "Aquarians are known for their independent and innovative nature, and the refreshing and tart flavors of blueberry and lemonade in a bubble tea reflect their originality and creative spirit.";
-      var audio = new Audio ('assets/1-aquarius-sound.mp3');
+      var audio = new Audio ('audio/aquarius.mp3');
       audio.play();
+    
 
       }
   
@@ -72,7 +73,7 @@ function zodiac(){
       img="graphics/pisces.png";
       charName="Coconut Lychee Bubble Tea";
       bio ="Pisceans are known for their dreamy and imaginative nature, and the sweet and tropical flavors of coconut and lychee in a bubble tea represent their whimsical and mystical personality.";
-      var audio = new Audio ('assets/2-pisces-sound.mp3');
+      var audio = new Audio ('audio/pisces.mp3');
       audio.play();
         
       }
@@ -83,7 +84,7 @@ function zodiac(){
       img="graphics/aries.png";
       charName="Spicy Mango Bubble Tea";
       bio ="Aries is known for being adventurous and passionate, and this bubble tea flavor reflects their bold personality with the spicy kick of mango.";
-      var audio = new Audio ('assets/3-aries-sound.mp3');
+      var audio = new Audio ('audio/aries.mp3');
       audio.play();
       
     }
@@ -95,7 +96,7 @@ function zodiac(){
       img="graphics/taurus.png";
       charName="Honeydew Milk Tea";    
       bio ="Taurus is known for their love of comfort and luxury, and the creamy sweetness of honeydew milk tea perfectly suits their indulgent nature.";
-      var audio = new Audio ('assets/4-taurus-sound.mp3');
+      var audio = new Audio ('audio/taurus.mp3');
       audio.play();
 
       }
@@ -107,7 +108,7 @@ function zodiac(){
       img="graphics/gemini.png";
       charName="Matcha Latte Bubble Tea";
       bio ="Geminis are known for their intellectual curiosity and quick-wittedness, and the earthy flavor of matcha in a latte bubble tea reflects their sharp and inquisitive personality.";
-      var audio = new Audio ('assets/5-gemini-sound.mp3');
+      var audio = new Audio ('audio/gemini.mp3');
       audio.play();
 
       }
@@ -119,7 +120,7 @@ function zodiac(){
       img="graphics/cancer.png";
       charName="Blueberry Lavender Bubble Tea";
       bio ="Cancerians are known for their nurturing and sensitive nature, and the soothing combination of blueberry and lavender in a bubble tea represents their calm and caring personality.";
-      var audio = new Audio ('assets/6-cancer-sound.mp3');
+      var audio = new Audio ('audio/cancer.mp3');
       audio.play();
 
       }
@@ -130,7 +131,7 @@ function zodiac(){
       img="graphics/leo.png";
       charName="Pineapple Coconut Bubble Tea";
       bio ="Leos are known for their bold and flamboyant personality, and the tropical flavors of pineapple and coconut in a bubble tea perfectly reflect their energetic and vibrant nature.";
-      var audio = new Audio ('assets/7-leo-sound.mp3');
+      var audio = new Audio ('audio/leo.mp3');
       audio.play();
 
       }
@@ -141,7 +142,7 @@ function zodiac(){
         img="graphics/virgo.png";
         charName="Green Apple Bubble Tea";
         bio ="Virgos are known for their practicality and attention to detail, and the crisp and refreshing flavor of green apple in a bubble tea reflects their meticulous and analytical nature.";
-        var audio = new Audio ('assets/8-virgo-sound.mp3');
+        var audio = new Audio ('audio/virgo.mp3');
         audio.play();
         
         }
@@ -152,7 +153,7 @@ function zodiac(){
         img="graphics/libra.png";
         charName="Rose Milk Tea";
         bio ="Libras are known for their love of beauty and harmony, and the delicate floral notes of rose in a milk tea represent their aesthetic sensibility and desire for balance.";
-        var audio = new Audio ('assets/9-libra-sound.mp3');
+        var audio = new Audio ('audio/libra.mp3');
         audio.play();
 
       }
@@ -163,7 +164,7 @@ function zodiac(){
         img="graphics/scorpio.png";
         charName="Chocolate Brown Sugar Bubble Tea";
         bio ="Scorpios are known for their intense and passionate nature, and the rich and decadent flavors of chocolate and brown sugar in a bubble tea reflect their deep and complex personality.";
-        var audio = new Audio ('assets/10-scorpio-sound.mp3');
+        var audio = new Audio ('audio/scorpio.mp3');
         audio.play();
         
       }
@@ -174,7 +175,7 @@ function zodiac(){
         img="graphics/saggitarius.png";
         charName="Mango Passionfruit Bubble Tea";
         bio ="Sagittarians are known for their love of adventure and spontaneity, and the exotic and fruity flavors of mango and passionfruit in a bubble tea reflect their free-spirited and adventurous nature.";
-        var audio = new Audio ('assets/11-sagittarius-sound.mp3');
+        var audio = new Audio ('audio/saggitarius.mp3');
         audio.play();
         
         }
@@ -186,7 +187,7 @@ function zodiac(){
         img="graphics/capricorn.png";
         charName="Black Sesame Bubble Tea";
         bio ="Capricorns are known for their practicality and ambition, and the subtle and nutty flavor of black sesame in a bubble tea represents their disciplined and determined personality.";
-        var audio = new Audio ('assets/12-capricorn-sound.mp3');
+        var audio = new Audio ('audio/capricorn.mp3');
         audio.play();
         
       }
@@ -271,8 +272,9 @@ maskAquarius.addEventListener('click', function(){
   charName = "Blueberry Lemonade Bubble Tea";
   bio = "Aquarians are known for their independent and innovative nature, and the refreshing and tart flavors of blueberry and lemonade in a bubble tea reflect their originality and creative spirit.";
   setCharacter();
-  var audio = new Audio ('assets/1-aquarius-sound.mp3');
+  var audio = new Audio ('audio/aquarius.mp3');
   audio.play();
+
 });
 maskpisces.addEventListener('click', function(){
   document.getElementsByClassName("zodiac-sub-box").innerHTML
@@ -281,7 +283,7 @@ maskpisces.addEventListener('click', function(){
   charName="Coconut Lychee Bubble Tea ";
   bio ="Pisceans are known for their dreamy and imaginative nature, and the sweet and tropical flavors of coconut and lychee in a bubble tea represent their whimsical and mystical personality.";
   setCharacter();
-  var audio = new Audio ('assets/2-pisces-sound.mp3');
+  var audio = new Audio ('audio/pisces.mp3');
   audio.play();  
 });
 maskAries.addEventListener('click', function(){
@@ -291,7 +293,7 @@ maskAries.addEventListener('click', function(){
   charName="Spicy Mango Bubble Tea";
   bio ="Aries is known for being adventurous and passionate, and this bubble tea flavor reflects their bold personality with the spicy kick of mango.";
   setCharacter();
-  var audio = new Audio ('assets/3-aries-sound.mp3');
+  var audio = new Audio ('audio/aries.mp3');
   audio.play();
 });
 maskTaurus.addEventListener('click', function(){
@@ -301,7 +303,7 @@ maskTaurus.addEventListener('click', function(){
   charName="Honeydew Milk Tea";    
   bio ="Taurus is known for their love of comfort and luxury, and the creamy sweetness of honeydew milk tea perfectly suits their indulgent nature.";
   setCharacter();
-  var audio = new Audio ('assets/4-taurus-sound.mp3');
+  var audio = new Audio ('audio/taurus.mp3');
   audio.play();  
 });
 maskAGemini.addEventListener('click', function(){
@@ -311,7 +313,7 @@ maskAGemini.addEventListener('click', function(){
   charName="Matcha Latte Bubble Tea";
   bio ="Geminis are known for their intellectual curiosity and quick-wittedness, and the earthy flavor of matcha in a latte bubble tea reflects their sharp and inquisitive personality.";
   setCharacter();
-  var audio = new Audio ('assets/5-gemini-sound.mp3');
+  var audio = new Audio ('audio/gemini.mp3');
   audio.play();  
 });
 maskCancer.addEventListener('click', function(){
@@ -322,7 +324,7 @@ maskCancer.addEventListener('click', function(){
   bio ="Cancerians are known for their nurturing and sensitive nature, and the soothing combination of blueberry and lavender in a bubble tea represents their calm and caring personality"
   ;
   setCharacter();
-  var audio = new Audio ('assets/6-cancer-sound.mp3');
+  var audio = new Audio ('audio/cancer.mp3');
   audio.play();  
 });
 maskLeo.addEventListener('click', function(){
@@ -332,7 +334,7 @@ maskLeo.addEventListener('click', function(){
   charName="Pineapple Coconut Bubble Tea";
   bio ="Leos are known for their bold and flamboyant personality, and the tropical flavors of pineapple and coconut in a bubble tea perfectly reflect their energetic and vibrant nature.";
   setCharacter();
-  var audio = new Audio ('assets/7-leo-sound.mp3');
+  var audio = new Audio ('audio/leo.mp3');
   audio.play();  
 });
 maskVirgo.addEventListener('click', function(){
@@ -342,7 +344,7 @@ maskVirgo.addEventListener('click', function(){
   charName="Green Apple Bubble Tea";
   bio ="Virgos are known for their practicality and attention to detail, and the crisp and refreshing flavor of green apple in a bubble tea reflects their meticulous and analytical nature.";
   setCharacter();
-  var audio = new Audio ('assets/8-virgo-sound.mp3');
+  var audio = new Audio ('audio/virgo.mp3');
   audio.play();  
 });
 maskLibra.addEventListener('click', function(){
@@ -352,7 +354,7 @@ maskLibra.addEventListener('click', function(){
   charName="Rose Milk Tea";
   bio ="Libras are known for their love of beauty and harmony, and the delicate floral notes of rose in a milk tea represent their aesthetic sensibility and desire for balance.";
   setCharacter();
-  var audio = new Audio ('assets/9-libra-sound.mp3');
+  var audio = new Audio ('audio/libra.mp3');
   audio.play();  
 });
 maskScorpio.addEventListener('click', function(){
@@ -362,7 +364,7 @@ maskScorpio.addEventListener('click', function(){
   charName="Chocolate Brown Sugar Bubble Tea";
   bio ="Scorpios are known for their intense and passionate nature, and the rich and decadent flavors of chocolate and brown sugar in a bubble tea reflect their deep and complex personality.";
   setCharacter();
-  var audio = new Audio ('assets/10-scorpio-sound.mp3');
+  var audio = new Audio ('audio/scorpio.mp3');
   audio.play();  
 });
 maskSagittarius.addEventListener('click', function(){
@@ -372,7 +374,7 @@ maskSagittarius.addEventListener('click', function(){
   charName="Mango Passionfruit Bubble Tea";
   bio ="Sagittarians are known for their love of adventure and spontaneity, and the exotic and fruity flavors of mango and passionfruit in a bubble tea reflect their free-spirited and adventurous nature.";
   setCharacter();
-  var audio = new Audio ('assets/11-sagittarius-sound.mp3');
+  var audio = new Audio ('audio/saggitarius.mp3');
   audio.play();  
 });
 maskCapricorn.addEventListener('click', function(){
@@ -382,6 +384,7 @@ maskCapricorn.addEventListener('click', function(){
   charName="Black Sesame Bubble Tea";
   bio ="Capricorns are known for their practicality and ambition, and the subtle and nutty flavor of black sesame in a bubble tea represents their disciplined and determined personality.";
   setCharacter();
-  var audio = new Audio ('assets/12-capricorn-sound.mp3');
+  var audio = new Audio ('audio/capricorn.mp3');
   audio.play();
+  
 });
