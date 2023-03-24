@@ -107,14 +107,6 @@ h1{
 
 }
 
-/* .rectangle {
-    width: 100%;
-    background: rgba(196, 196, 196, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(4px);
-    border-radius: 35px;
-} */
-
 .rectangle {
     width: 100%;
 
@@ -129,13 +121,10 @@ h1{
 #main-container {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     justify-content: center;
 }
 .zodiac-box {
-    /* either use 180px or 240px */
     max-width: 180px;
-    /* max-width: 180px; */
     margin: 30px;
     color: #553C28;
     text-align: center;
@@ -167,7 +156,7 @@ h1{
     text-align: center;
 }
 
-/* this is zodiac cards */
+
 
 .zodiac-sub-box {
     display: none;
@@ -180,8 +169,6 @@ h1{
     border: 3px solid #553C28;
 }
 .sign-image-aquarius {
-    /* max-height: 200px; */
-    /* object-fit: cover; */
     width: 20%;
     margin:auto;
     text-align: center;
@@ -202,8 +189,6 @@ h1{
     font-size: 1rem;
 	padding: 10px;
 }
-
-/* help button */
 
 .help-button-box{
     display: flex;
@@ -279,8 +264,6 @@ h1{
     font-size: 2rem;
     font-family: var(--Roboto-medium);
 }
-
-/* remover image button background  */
 
 .aquarius-button {
     background: none;
